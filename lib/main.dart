@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Center(child: Text(widget.title)),
       ),
       body: SmartRefresher(
         // enablePullDown: true,
@@ -70,14 +70,13 @@ class _MyHomePageState extends State<MyHomePage> {
         onRefresh: _onRefresh,
         child: Center(
           child: Column(
-
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(18.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color(0xfff5fd),
+                    color: Colors.black12,
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Padding(
